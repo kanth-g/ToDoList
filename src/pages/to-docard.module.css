@@ -1,0 +1,27 @@
+.todo_card{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 50px;
+    background-color: aliceblue;
+    width: 100%;
+}
+.todo_card__header {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.header_arrow {
+    transition: transform 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.header_arrowR  {
+    transform: rotate(180deg); 
+}

@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ToDoCard from './pages/ToDoCard';
 
 function App() {
+  const cards = [
+    {time: " 6 Sep 24", title:"Read all books", content:"trying to read all boks"},
+    {time: " 6 Sep 24", title:"Read all books", content:"trying to read all boks"}
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        cards?.map((ele, i) =>{
+          
+          <ToDoCard/>
+        })
+      }
     </div>
-  );
+  )
 }
 
 export default App;
