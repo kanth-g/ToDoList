@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { GoChevronUp } from "react-icons/go";
 import  styles  from "./to-docard.module.css";
-const ToDoCard = ({time, title, content}) =>{
+const ToDoCard = (props) =>{
+const {time, title, content} = props.cards;
 const [isContent, setContent] = useState(false)
-console.log(time, title, content, "time, title, content");
 
     return(
         <div className={styles.todo_card}>
@@ -14,9 +14,9 @@ console.log(time, title, content, "time, title, content");
             </div>
             {
                 isContent ?
-                <div className={styles.todo_card__body}>
+                <li className={styles.todo_card__body}>
                   {content}                  
-                </div>:''
+                </li>:''
             }
            
       
