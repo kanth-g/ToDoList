@@ -7,10 +7,10 @@ const [isContent, setContent] = useState(false)
 
     return(
         <div className={styles.todo_card}>
-            <div className={styles.todo_card__header}>
+            <div className={styles.todo_card__header} onClick={()=>setContent(!isContent)}>
                 <span className="header_time">{time}</span>
                 <span className="header_title">{title}</span>                
-                <GoChevronUp className={`${styles.header_arrow} ${isContent ? styles.header_arrowR: ''}`}  onClick={()=>setContent(!isContent)}/>
+                <GoChevronUp className={`${styles.header_arrow} ${isContent ? styles.header_arrowR: ''}`} />
             </div>
             {
                 isContent ?

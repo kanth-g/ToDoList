@@ -1,4 +1,4 @@
-.App {
+/* .App {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -39,4 +39,7 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body{
+  background-color: #dadedd;
 }
